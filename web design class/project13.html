@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Project 13</title>
+<meta name= "viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+#box {
+width: 200px;
+height: 200px;
+background-color: red;
+margin: 1em;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Item 1</h1>
+<button id="alert" type="button">Alert!</button>
+<script>
+document.getElementById('alert').addEventListener("click", function(e){alert('Alert!');
+});
+</script>
+
+<h1>Item 2</h1>
+<button id="prompt" type="button">Prompt</button>
+<script>
+document.getElementById('prompt').addEventListener("click", function(e){
+  var input_name = prompt('What is your name?');
+  for(i=0; i<5; i++) {
+    console.log(input_name);
+    }
+  });
+</script>
+
+<h1>Item 3</h1>
+<script>
+
+var colors = ("Red", "Orange", "Yellow", "Green", "Blue", "Purple");
+for(i=0; i<colors.length; i++) {
+document.write(colors[i]);
+}
+
+</script>
+
+<h1>Item 4</h1>
+<div id="box"></div>
+
+<script>
+document.getElementById('box').addEventListener("onmouseout", function(){
+var box = onmouseout('box');
+for(i=0; i<5; i++){
+  console.log(box);
+}
+});
+
+</script>
+
+<h1>Item 5</h1>
+<label>First<input type="text" id="firstbox"</label><br>
+<label>Second<input type="text" id="secondbox"</label><br>
+
+<button id="check" type="button">Check</button>
+
+<script>
+
+if( firstbox==secondbox){
+  alert("The two values are equal!"); 
+ } else {
+    alert("The two values are unequal");
+ }
+
+</script>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
